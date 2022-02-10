@@ -82,14 +82,24 @@ section
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 20px;
+    
 
 }
 
 .intro .name{
     
-    background: -webkit-linear-gradient(#BF953F, #FCF6BA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
+    color: darkorange;
+    -webkit-text-stroke: 1px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.intro .dev{
+    
+   
+    color: darkorange;
+    -webkit-text-stroke: 1.4px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
@@ -100,6 +110,7 @@ section
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
+    -webkit-text-stroke: 1.4px black;
 
 }
 
@@ -712,6 +723,15 @@ ul {
 
 }
 
+.my-info 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .my-info i 
 {
     margin-left: 4px;
@@ -821,13 +841,13 @@ ul {
         height: 220px;
     }
 
-    .follow .my-info
+    .follow .my-info 
     {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .web-content

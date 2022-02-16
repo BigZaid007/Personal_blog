@@ -406,6 +406,120 @@ ul {
     transition: 1s;
 }
 
+
+.UI 
+{
+    background-color: #2A293E;
+}
+
+.subtitle-UI a
+{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #e3447b;
+}
+
+.subtitle-UI
+{
+    display: flex;
+   justify-content: center;
+   color: #fff;
+   font-size: 2em;
+   font-weight: 800;
+   margin-bottom: 35px;
+   font-family: monospace; 
+}
+
+
+.UI.content
+{
+    margin-top: 30px;
+
+}
+
+.UI .UI-Icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color:#e3447b ;
+}
+
+.UI .main-title-pro
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.UI .UI-info
+{
+
+
+    text-align: center;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.UI .card-UI
+{
+
+    background-color:#1a2038;
+    border: 2px solid #fff;
+    min-height: 13.2em;
+    width: 39%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+}
+
+.UI .content-UI
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.UI .card-UI:hover
+{
+
+   transform: scale(1.1);
+   opacity: 0.5;
+   background-color: #000016;
+   
+
+}
+
+.UI .UI-link
+{
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.UI .UI-link:hover
+{
+    color: green;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
 .Apps
 {
     background-color:#000016 ;

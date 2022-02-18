@@ -1,11 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Righteous&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+   
 }
 
 header
@@ -21,6 +26,22 @@ header
     
 }
 
+.logo .name .cir 
+{
+    color: red;
+    
+}
+.logo .name .cir2 
+{
+    color:blue;
+    
+}
+.logo .name .cir3 
+{
+    color:yellow;
+    
+}
+
 .logo
 {
     display: flex;
@@ -32,7 +53,9 @@ header
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cookie', cursive;
+    font-weight: 500;
+    font-style: italic;
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -86,11 +109,11 @@ section
 
 }
 
-.intro .name{
+/* .intro .name{
     
     
-    color: darkorange;
-    -webkit-text-stroke: 1px black;
+    color: #5D76CB;
+    -webkit-text-stroke: 0.1px white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
@@ -102,7 +125,7 @@ section
     -webkit-text-stroke: 1.4px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
-}
+} */
 
 .intro .main-text {
     font-size: 2.1em;
@@ -357,7 +380,20 @@ ul {
 }
 
 
-.Projects .card-Projects
+.Projects .card-Projects-phone
+{
+
+    background-color:#263238;
+    border: 2px solid #fff;
+    min-height: 13.2em;
+    width: 39%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+}
+.Projects .card-Projects-web
 {
 
     background-color:#263238;
@@ -379,7 +415,16 @@ ul {
 }
 
 
-.Projects .card-Projects:hover
+.Projects .card-Projects-phone:hover
+{
+
+   transform: scale(1.1);
+   opacity: 0.5;
+   background-color: #000016;
+   
+
+}
+.Projects .card-Projects-web:hover
 {
 
    transform: scale(1.1);
@@ -894,41 +939,126 @@ ul {
 
 @media (max-width:1023px)
 {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
     header
     {
-        padding: 12px 20px;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
+        height: 83px;
     }
+
+    .app-header
+    {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .app-header .bar 
+    {
+        display: none;
+        
+    }
+    .web-header
+    {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .web-header .bar 
+    {
+        display: none;
+        
+    }
+
+
 
     header .logo
     {
-        padding: 20px;
+        padding-top: 8px;
     }
 
     header .logo a
     {
-        font-size: 25px;
+        font-size: 60px;
         padding: 4px;
     }
     header .logo i
     {
-        font-size: 25px;
+        font-size: 60px;
         padding: 4px;
     }
 
     .intro h4
     {
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    header .bar a 
+    header .bar
     {
-        
-        font-size: 15px;
-        padding:20px;
+        position: relative;
+        padding-top: 25px;
     }
+
+    header .bar a
+    {
+        display:flex;
+        justify-content: space-evenly;
+        bottom: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        
+
+    }
+
+    header .bar a:nth-child(1)
+    {
+        position: absolute;
+        top: 0px;
+        right: 220px;
+        
+
+    }
+    
+    header .bar a:nth-child(2)
+    {
+        position: absolute;
+        top: 0px;
+        right: 130px;
+        
+
+    }
+    header .bar a:nth-child(3)
+    {
+        position: absolute;
+        top: 0px;
+        right: 40px;
+        
+
+    }
+    header .bar a:nth-child(4)
+    {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    
+    }
+    header .bar a:nth-child(5)
+    {
+        position: absolute;
+        top: 0px;
+        right: -90px;
+    
+    }
+
+   
 
     .title
     {
@@ -937,7 +1067,7 @@ ul {
 
     .subtitle
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     section {
@@ -946,20 +1076,99 @@ ul {
 
     .subtitle-pro
     {
-        font-size: 1.2em;
+        font-size: 1.0em;
+    }
+    .subtitle-UI
+    {
+        font-size: 0.9em;
     }
 
+    .content-Project
+    {
+     height: 600px;
+      position: relative;
+      
+      
+    }
+    .content-UI
+    {
+     height: 400px;
+      position: relative;
+      
+      
+    }
+
+    .card-Projects-phone
+    {
+        
+        display: block;
+        background-color: #4c6ef5;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .content-UI .card-UI
+    {
+        
+        display: block;
+        background-color: #1a2038;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .Projects .Project-info
+     {
+
+
+    text-align: center;
+    color: #2A293E;
+    margin-left: 10px;
+     margin-right: 10px;
+   }
+
+   
+    .card-Projects-web
+    {
+        
+        display: block;
+        background-color: #4c6ef5;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px;
+        top: 300px;
+
+    }
+
+    .contact-wrap
+    {
+        height: 400px;
+        position: relative;
+    }
+
+
+
+    .phone-card {
+        position: absolute;
+        display: block;
+        width: 80%;
+        top: 0;
+
+    }
+    
     .email-card
     {
-        width: 220px;
-        height: 220px;
+        position: absolute;
+        display: block;
+        width: 80%;
+        top: 220px;
+        
     }
 
-    .phone-card
-    {
-        width: 220px;
-        height: 220px;
-    }
+    
 
     .follow .my-info 
     {
@@ -972,7 +1181,7 @@ ul {
 
     .web-content
     {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1003,24 +1212,26 @@ ul {
 
     .web-one img 
     {
-        width: 200px;
+        width: 400px;
         height: 200px;
     }
 
     .web-two img 
     {
-        width: 200px;
+        width: 400px;
         height: 200px;
     }
 
     .web-one h2 
     {
-        font-size: 20px;
+        font-size: 15px;
+        padding: 10px;
     }
 
     .web-two h2 
     {
-        font-size: 20px;
+        font-size: 15px;
+        padding: 10px;
     }
 }
 

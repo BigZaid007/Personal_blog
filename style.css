@@ -1066,22 +1066,22 @@ ul {
         font-size: 1.8em;
     }
 
-    .subtitle
+    .tutorials .subtitle
     {
-        font-size: 1.1em;
+        font-size: 0.7em;
     }
 
     section {
         padding: 80px 20px;
     }
 
-    .subtitle-pro
+    .Projects .subtitle-pro
     {
-        font-size: 1.0em;
+        font-size: 0.7em;
     }
-    .subtitle-UI
+    .UI .subtitle-UI
     {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     .content-Project
@@ -1330,7 +1330,7 @@ ul {
         padding: 5px;
         color: #000;
         background-color: white;
-        transition: 2s;
+        transition: 21s;
         
         
 
